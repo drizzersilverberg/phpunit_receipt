@@ -6,16 +6,16 @@ This is a project that developed through [Lynda - PHP: Test-Driven-Development w
 
 1. PHP7.0 or latest
 2. PHP Extensions:
-..* DOM
-..* JSON
-..* PCRE
-..* Reflection
-..* SPL
-..* XMLWriter
+  * DOM
+  * JSON
+  * PCRE
+  * Reflection
+  * SPL
+  * XMLWriter
 3. Composer 1.2.* or latest
 
 ## Instalation
-    composer install
+    $ composer install
 
 ## Usage
 Make sure you are inside the project folder.
@@ -26,6 +26,8 @@ Make sure you are inside the project folder.
     $ vendor/bin/phpunit tests
 
 ## History
+1. Add Receipt class, along with total() method
+2. Add ReceiptTest class, along with testTotal() method
 
 ## Available Tests
 
