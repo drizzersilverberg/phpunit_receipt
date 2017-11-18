@@ -33,3 +33,4 @@ Make sure you are inside the project folder.
 
 ### ReceiptTest
     $ vendor/bin/phpunit tests --filter testTotal
+    $ vendor/bin/phpunit tests --filter testTax
