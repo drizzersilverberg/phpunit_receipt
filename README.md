@@ -31,13 +31,14 @@ Make sure you are inside the project folder.
 
 ## Available Tests:
 ### Run All Test
-    $ vendor/bin/phpunit --tests
+    $ vendor/bin/phpunit tests
     $ vendor/bin/phpunit --testsuite=app
 
 ### ReceiptTest
     $ vendor/bin/phpunit tests --filter ReceiptTest
     $ vendor/bin/phpunit tests --filter testTotal
     $ vendor/bin/phpunit tests --filter=testTotal#1-2
+    $ vendor/bin/phpunit tests --filter testTotalException
     $ vendor/bin/phpunit tests --filter testTotalAndCoupon
     $ vendor/bin/phpunit tests --filter='testTotal@inst totaling 16'
     $ vendor/bin/phpunit tests --filter testTax
