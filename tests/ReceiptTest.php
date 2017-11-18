@@ -24,12 +24,34 @@ class ReceiptTest extends TestCase
     {
         # -- input
         $input = [0,2,5,8];
+        $coupon = null;
 
         # -- output
-        $output = $this->Receipt->total($input);
+        $output = $this->Receipt->total($input, $coupon);
 
         # -- expected output
         $expected_output = 15;
+
+        # -- run test
+        $this->assertEquals(
+            $expected_output,
+            $output,
+            "When summing the total should equal $expected_output"
+        );
+    }
+
+    /** @test */
+    public function testTotalAndCoupon()
+    {
+        # -- input
+        $input = [0,2,5,8];
+        $coupon = 0.20;
+
+        # -- output
+        $output = $this->Receipt->total($input, $coupon);
+
+        # -- expected output
+        $expected_output = 12;
 
         # -- run test
         $this->assertEquals(
