@@ -30,7 +30,11 @@ Make sure you are inside the project folder.
 2. Add ReceiptTest class, along with testTotal() method
 
 ## Available Tests:
+### Run All Test
+    $ vendor/bin/phpunit --tests
+    $ vendor/bin/phpunit --testsuite=app
 
 ### ReceiptTest
+    $ vendor/bin/phpunit tests --filter ReceiptTest
     $ vendor/bin/phpunit tests --filter testTotal
     $ vendor/bin/phpunit tests --filter testTax
