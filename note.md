@@ -88,3 +88,31 @@ That the expected result have occured.
 * Test in isolation
 * Test only a few things at once or even just one thing at once
 * Test should be easy to write, a hard test generally means re-write your implementation
+
+## Test Double
+`a generic term for any case where you replace a production object for testing purposes`
+[http://www.martinfowler.com/bliki/TestDouble.html](http://www.martinfowler.com/bliki/TestDouble.html)
+
+### Test Double, Why do and use them?
+`Unit Testing, test your code in isolation`
+* Replace a dependency
+* Ensure a condition occurs
+* Improve the performance of our tests
+* Make it fast
+* Make it isolated
+* Make it fully covered
+
+### Test Doubles
+* Dummy
+Replaces an object typically as an input, thas isn't used or needed for the test.
+* Fake
+Replaces an object in which we need a simplified version of the object, typically to achieve speed improvement or to eliminate side effects.
+* Stub
+Provides a preset answer to method calls that we have decided ahead of time.
+* Spy
+A spy acts as higher level stub, it allows us to also record information about what happenend with this test double
+* Mock
+A mock acts as a higher level stub, they are pre-programmed with expectations, including the ability to both respond to calls they know about and don't know about.
+
+`Test Doubles are core to unit testing`
+
