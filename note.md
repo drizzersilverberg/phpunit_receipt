@@ -74,3 +74,17 @@ Ensure the functions of your application
 Test series of step to ensure some behavior in the application is correct
 * Acceptance
 Typically done by stakeholders to ensure application meets the designed requirement
+
+## An Extended Unit Test
+`Arrange - Act - Assert`
+* Arrange
+All necessary preconditions and inputs for test case.
+* Act
+On the object or method under test.
+* Assert
+That the expected result have occured.
+
+### General Principles
+* Test in isolation
+* Test only a few things at once or even just one thing at once
+* Test should be easy to write, a hard test generally means re-write your implementation
