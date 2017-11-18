@@ -39,3 +39,4 @@ Make sure you are inside the project folder.
     $ vendor/bin/phpunit tests --filter testTotal
     $ vendor/bin/phpunit tests --filter testTotalAndCoupon
     $ vendor/bin/phpunit tests --filter testTax
+    $ vendor/bin/phpunit tests --filter testPostTaxTotal

@@ -18,4 +18,11 @@ class Receipt
     {
         return ($amount * $tax);
     }
+
+    public function postTaxTotal($items, $tax, $coupon)
+    {
+        $subtotal = $this->total($items, $coupon);
+
+        return $subtotal + $this->tax($subtotal, $tax);
+    }
 }
