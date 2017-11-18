@@ -40,7 +40,7 @@ class ReceiptTest extends TestCase
     public function provideTotal()
     {
         return [
-            [[1,2,5,8], 16],
+            'inst totaling 16' => [[1,2,5,8], 16],
             [[-1,2,5,8], 14],
             [[1,2,8], 11],
         ];
