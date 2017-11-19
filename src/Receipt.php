@@ -6,6 +6,11 @@ use \BadMethodCallException;
 
 class Receipt
 {
+    public function __construct($formatter)
+    {
+        $this->Formatter = $formatter;
+    }
+
     public function subTotal(array $items = [], $coupon)
     {
         if ($coupon > 1.00) {
@@ -23,7 +28,7 @@ class Receipt
 
     public function tax($amount)
     {
-        return ($amount * $this->tax);
+        return $this->Formatter->currencyAmt($amount * $this->tax);
     }
 
     public function postTaxTotal($items, $coupon)
@@ -31,10 +36,5 @@ class Receipt
         $subtotal = $this->subTotal($items, $coupon);
 
         return $subtotal + $this->tax($subtotal);
-    }
-
-    public function currencyAmt($input)
-    {
-        return round($input, 2);
     }
 }
