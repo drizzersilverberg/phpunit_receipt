@@ -25,10 +25,6 @@ Make sure you are inside the project folder.
 ### Ubuntu (Terminal)
     $ vendor/bin/phpunit tests
 
-## History
-1. Add Receipt class, along with total() method
-2. Add ReceiptTest class, along with testTotal() method
-
 ## Available Tests:
 ### Run All Test
     $ vendor/bin/phpunit tests
