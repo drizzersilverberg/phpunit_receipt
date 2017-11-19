@@ -116,5 +116,41 @@ A mock acts as a higher level stub, they are pre-programmed with expectations, i
 
 `Test Doubles are core to unit testing`
 
-## The TDD Cycle
+### The TDD Cycle
 
+## TDD Advantages
+
+### `TDD: A lower cost to changes`
+* More Tests + More Coverage = Less Defects
+* Less Defects = Less Time Spent on Bugs
+* Less Time on Bugs = More Time on Features
+* More Test + More Coverage = Easier Refactoring
+* More Test + More Coverage = Easier Additional Features
+
+### `TDD: Build More Features and Less Bugs`
+
+## Contact Form Test
+
+### Test Cases
+* No email address
+* Invalid email address
+* No name entered in
+* Email sent
+* Email has correct information
+
+### Additional Features
+* Change in the email format
+* Add a BCC to the email
+* Add a url field with validation
+
+### TDD Pattern
+* Validation
+* sendEmail
+* formatEmail
+* Get/Post Request
+
+### TDD and Unit Testing
+* Better Developer
+* Better Software
+* Less Time on Bugs
+* More Time on Features
